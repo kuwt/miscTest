@@ -7,7 +7,7 @@ int PutImageToBackground(const cv::Mat &Src,
 						const cv::Size &BGSize,
 						const unsigned char &FillValue,
 						const cv::Point &SrcCenterLocInBG,
-	cv::Mat &Dst)
+						cv::Mat &Dst)
 {
 	// Check if BGSize > Src size
 	if (BGSize.width < Src.size().width || BGSize.height < Src.size().height)
@@ -29,8 +29,8 @@ int PutImageToBackground(const cv::Mat &Src,
 	ExpectedUL.x = SrcCenterLocInBG.x - Src.size().width / 2;
 	ExpectedUL.y = SrcCenterLocInBG.y - Src.size().height / 2;
 	cv::Point ExpectedLR;
-	ExpectedLR.x = SrcCenterLocInBG.x + Src.size().width / 2;
-	ExpectedLR.y = SrcCenterLocInBG.y + Src.size().height / 2;
+	ExpectedLR.x = ExpectedUL.x + Src.size().width;
+	ExpectedLR.y = ExpectedUL.y + Src.size().height;
 
 	if (ExpectedUL.x < 0 || ExpectedUL.y < 0 || ExpectedLR.x > BGSize.width || ExpectedLR.y >  BGSize.height)
 	{

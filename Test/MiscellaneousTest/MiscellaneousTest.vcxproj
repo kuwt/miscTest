@@ -64,10 +64,12 @@
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <Import Project="..\..\CommonPropertySheets\OpenCVPropertySheetDebug.props" />
+    <Import Project="..\..\CommonPropertySheets\TiffPropertySheetDebug.props" />
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <Import Project="..\..\CommonPropertySheets\OpenCVPropertySheetRelease.props" />
+    <Import Project="..\..\CommonPropertySheets\TiffPropertySheetRelease.props" />
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
@@ -149,12 +151,14 @@
   <ItemGroup>
     <ClInclude Include="..\..\LoadImage\LoadImage.h" />
     <ClInclude Include="..\..\PutImageToBackground\PutImageToBackground.h" />
+    <ClInclude Include="..\..\SaveImage\SaveImage.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\LoadImage\LoadImage.cpp" />
     <ClCompile Include="..\..\PutImageToBackground\PutImageToBackground.cpp" />
+    <ClCompile Include="..\..\SaveImage\SaveImage.cpp" />
     <ClCompile Include="MiscellaneousTest.cpp" />
     <ClCompile Include="stdafx.cpp" />
   </ItemGroup>
