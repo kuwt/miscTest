@@ -150,15 +150,20 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\LoadImage\LoadImage.h" />
+    <ClInclude Include="..\..\Mask\Mask.h" />
     <ClInclude Include="..\..\PutImageToBackground\PutImageToBackground.h" />
     <ClInclude Include="..\..\SaveImage\SaveImage.h" />
+    <ClInclude Include="..\..\Timer\Timer.h" />
+    <ClInclude Include="..\..\util.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\LoadImage\LoadImage.cpp" />
+    <ClCompile Include="..\..\Mask\Mask.cpp" />
     <ClCompile Include="..\..\PutImageToBackground\PutImageToBackground.cpp" />
     <ClCompile Include="..\..\SaveImage\SaveImage.cpp" />
+    <ClCompile Include="..\..\Timer\Timer.cpp" />
     <ClCompile Include="MiscellaneousTest.cpp" />
     <ClCompile Include="stdafx.cpp" />
   </ItemGroup>

@@ -4,9 +4,7 @@
 #include "stdafx.h"
 
 #include <opencv2/opencv.hpp>
-#include "../../LoadImage/LoadImage.h"
-#include "../../PutImageToBackground/PutImageToBackground.h"
-
+#include "../../util.h"
 void PutImageToBackgroundTest()
 {
 	cv::Mat Src = loadImage("C:\\Users\\Ronald\\Desktop\\A\\templ1.bmp");
