@@ -19,9 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{9FB36E75-0980-4549-8733-A9D4F6DD068F}</ProjectGuid>
+    <ProjectGuid>{2BABA2E7-0459-48E3-9AB0-47EB2EFFA94D}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>misc</RootNamespace>
+    <RootNamespace>ToyProj_Interface</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -145,11 +145,15 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Header.h" />
+    <ClInclude Include="Interface.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="misc.cpp" />
+    <ClCompile Include="Interface.cpp" />
+    <ClCompile Include="InterfaceTest.cpp" />
+    <ClCompile Include="Source.cpp" />
     <ClCompile Include="stdafx.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
