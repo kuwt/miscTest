@@ -3,7 +3,7 @@ RuleOfFiveTest.cpp
 Purpose: Illustrate the Rule of Five for class design
 and how the calling pattern will invoke each of the rule of five methods
 
-@author Ku Wing To
+@author kuwingto
 @version 1.0 23/08/2018
 */
 #include "stdafx.h"

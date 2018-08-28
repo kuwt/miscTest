@@ -12,6 +12,7 @@ int main()
 {
 	CBase* pMac = FactoryCreate();
 	pMac->test();
+	delete pMac;
 
 	system("Pause");
     return 0;
