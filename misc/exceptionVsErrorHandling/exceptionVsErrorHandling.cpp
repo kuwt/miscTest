@@ -132,12 +132,13 @@ int exception5()
 	{
 		exception5a();
 	}
-	catch (const char* msg)
+	//catch (const char* msg)
+	catch (...)
 	{
-		std::cerr << "catch at exception5 " << msg << "\n";
+		std::cerr << "catch at exception5 "  << "\n";
 	}
 	return 0;
-}
+	}
 
 int exception6a()
 {
@@ -163,12 +164,12 @@ int exception6()
 int main()
 {
 	//exception0();		// cannot run, will terminate program
-	exception1();
-	exception2();
-	exception3();
+	//exception1();
+	//exception2();
+	//exception3();
 	//exception4();		// cannot run, will terminate program
-	//exception5();		// cannot run, will terminate program
-	exception6();		// cannot run, will terminate program
+	exception5();		// cannot run, will terminate program
+	//exception6();		// cannot run, will terminate program
 	std::cout << "press key to continue ";
 	getchar();
     return 0;
