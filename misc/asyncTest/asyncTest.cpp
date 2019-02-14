@@ -11,6 +11,9 @@ void called_from_async()
   std::cout << "Async call" << std::endl;
 }
 
+/***********************************
+call async function with no variable
+*************************************/
 int main1()
 {
 	//called_from_async launched in a separate thread if possible
@@ -26,6 +29,9 @@ int main1()
 	return 0;
 }
 
+/***********************************
+call async function with lambda
+*************************************/
 int main() 
 {
 	//called_from_async launched in a separate thread if possible
